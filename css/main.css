@@ -1,18 +1,27 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 h2 {
-  background-color: rgba(0, 0, 0, .5);
-  color: #fff;
   font-size: 4rem;
   margin: 0 0 1rem;
+  padding: 0;
+  line-height: 1.4;
+}
+
+span {
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
 }
 
 p {
@@ -24,6 +33,7 @@ p {
 .banner {
   position: relative;
   max-height: 500px;
+  overflow: hidden;
 }
 
 .img-flex {
@@ -31,12 +41,12 @@ p {
   width: 100%;
 }
 
-.banner-content{
-  padding: 0 1em;
+.banner-content {
+  padding: 0 1.5em;
   position: absolute;
   max-width: 50em;
   width: 100%;
-  bottom: 0;
+  bottom: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
