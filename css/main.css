@@ -12,8 +12,7 @@ h2 {
   background-color: rgba(0, 0, 0, .5);
   color: #fff;
   font-size: 4rem;
-  margin: 0;
-  padding-bottom: 1rem;
+  margin: 0 0 1rem;
 }
 
 p {
@@ -23,17 +22,21 @@ p {
 }
 
 .banner {
-  max-height: 50em;
   position: relative;
+  max-height: 500px;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
 }
 
 .banner-content{
   padding: 0 1em;
   position: absolute;
-}
-
-.img-flex {
-  position: absolute;
-  max-height: 500px;
+  max-width: 50em;
   width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
